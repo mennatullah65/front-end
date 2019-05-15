@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!-- الترميز العالمي يدعم اللغه العربيه و الانجليزية-->
+	<meta name="description" content="dffsfd fdgd  gd gd fg fd gdg   dg df g">
+    <title>My Second Page</title>
+	<title>CSS SYNTAX</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script>
+	    function sayHello(){
+	        alert("Hello HTML");
+	    }
+	</script>
+	<style>
+	<!--
+	selector
+	{
+	prperty:value
+	}	
+	-->
+	<!--p{color:green;}-->
+	
+	<!--fieldset{
+	background:#AAA;
+	border:1px solid #CCC;
+	margin-bottom:20px;
+	padding:10px
+	}
+	legend{
+	background:#FFF;
+	padding:5px;
+	border:1px solid #CCC
+	}-->
+	div
+	{
+	   width:500px;
+	   padding:10px;
+	   background:#EEE;
+	   border: 1px solid #CCC;
+	   margin:10px 0
+	}
+	blockquote
+	{
+	   width:500px;
+	   padding:30px;
+	   background:#EEE;
+	   border: 1px solid #CCC;
+	   margin:30px 0
+	}
+	table{
+	border:2px solid #EEE;width:500px
+	}
+	
+	.test1{
+	color:red;
+	background:black
+	
+	}
+	.test2{
+	color:blue
+	
+	}
+	
+	<!--label,input,select{display:block}-->
+	<!--input{type="text"},input[type="passoward"]{display:block}-->
+	input type="radio"{diplay:inline}
+	fieldset{
+	margin=20px auto;
+	width=500px;
+	padding:20px;
+	}
+	
+	
+	</style>
+	<!--   <script>alert("welcome to js")</script>      -->
+	<!--this is script-->
+	
+</head>
+
+<body>
+
+    <form name="register" action="post.php" method="post">
+	<select name="time"  size="3" multiple>
+	<optgroup label="Far Time" disabled>
+	<option value="1">now </option>
+	<option value="2">tomorrow</option>
+	<option value="3" disabled>then</option>
+	</optgroup>
+	<optgroup label="Near Time">
+	<option value="4" selected>now </option>
+	<option value="5">tomorrow</option>
+	<option value="6">then</option>
+	</optgroup >
+	</select>
+	   <fieldset>
+	   <legend>personal information</legend>
+	   <label>User Name</label>
+	   <input type="text" name="name" value="" placeholder="Enter your name" maxlength=10>
+	   <br>
+	   <label>Password</label>
+	   <input type="password" name="passward" value="" placeholder="Type your passward" maxlength=10>
+	   </fieldset>
+	   <fieldset>
+	   <legend>Your Favorites</legend>
+	   <label>Choose Your Browser</label>
+	   <br>
+	   <input type="radio" name="browser" value="Chrome">Chrome
+	   <br>
+	   <input type="radio" name="browser" value="FireFox">FireFox
+	   <br>
+	   <input type="radio" name="browser" value="Opera">Opera
+	   </fieldset>
+	   <br>
+	   <labelYour Message</label>
+	   <textarea rows=6 cols=30 readonly>This note for you</textarea>
+	   <br>
+	   <input type="checkbox"> <label>Remember Me</label>
+	   <input type="Submit" value="Sign In">
+	   <br>
+	   <input type="image" src="http://placehold.it/100/100" alt="Submit">
+	   <br>
+	   <input type="hidden" value="testing">
+	   <label>Upload Your CV</label>
+	   <input type="file">
+	   <br>
+	   
+	   <br>
+	   
+	   <input type="button" name="say hello" Value="say hello" onclick="sayHello()">
+	   <br>
+	   <input type="reset" value="RESET">
+       
+	</form>
+	
+	<form>
+	<fieldset>
+	<legend>Personal Information</legend>
+	<label>User Name</label>
+	<input type="text" name="username">
+	<label>User E-mail</label>
+	<input type="text" name="useremail">
+	<label>Password</label>
+	<input type="password" name="userpassword">
+	<label>gender</label>
+	<select>
+	<option>male</option>
+	<option>female</option>
+	</select>
+	</fieldset>
+	<fieldset>
+	<legend>Favourites</legend>
+	<label>your favourite text editor</label>
+	<input type="radio" name="editor" display:inline>kumudoeditor
+	<input type="radio" name="editor" display:inline>Netbeans
+	<input type="radio" name="editor" display:inline>Sublimetext
+	</fieldset>
+	<fieldset>
+	<legend>Your Message</legend>
+	<textarea height="500" width="400" display:block></textarea>
+	<input type="submit" value="Send your message">
+	</fieldset>
+	</form>
+	
+    <div class="test1">This is div1</div>
+	<div class="test2">This is div2</div>
+    <table border="5" align="center" width="800">
+	    <caption>Languages</caption>
+		    <tr>
+		       <th>lang1</th>
+		       <th>lang2</th>
+			   <th>lang3</th>
+			   <th>lang4</th>
+		   </tr>
+	       <tr>
+		       <td>HTML</td>
+		       <td>CSS</td>
+			   <td>JavaScript</td>
+			   <td>JQuery</td>
+		   </tr>
+		   <tr>
+		       <td>C++</td>
+		       <td>C#</td>
+			   <td>C</td>
+			   <td>Java</td>
+		   </tr>
+	</table>
+	
+	<table>
+	
+	<caption>describe the colspan</caption>
+	<colgroup>
+	 <col span="2" style="background:#EEE">
+	 <col span="3" style="background:#AAA">
+	</colgroup>
+	    <tr>
+		   <td >Programming</td>
+		   <td >Programming</td>
+		   <td >Web Design</td>
+		   <td >Web Design</td>
+		   <td >Web Design</td>
+		</tr>
+		<tr>
+		   <td>php</td>
+		   <td>mysql</td>
+		   <td>html</td>
+		   <td>css</td>
+		   <td>jquery</td>
+		</tr>
+	</table>
+	
+	<caption>describe the colspan</caption>
+	    <tr>
+		   <td colspan="2">Programming</td>
+		   <td colspan="3">Web Design</td>
+		</tr>
+		<tr>
+		   <td>php</td>
+		   <td>mysql</td>
+		   <td>html</td>
+		   <td>css</td>
+		   <td>jquery</td>
+		</tr>
+	</table>
+	
+	
+	<table>
+	<caption>describe the rowspan</caption>
+	    <tr>
+		   <td >name</td>
+		   <td >email</td>
+		</tr>
+		<tr>
+		   <td rowspan="3">osama</td>
+		   <td>o1@g.com</td>
+		</tr>
+		<tr>
+		   <td>o2@g.com</td>
+		</tr>
+		<tr>
+		   <td>o3@g.com</td>
+		</tr>
+		<tr>
+		   <td >ahmed</td>
+		   <td>o0@g.com</td>
+		</tr>
+	</table>
+	
+    <h1>Unordered list</h1> 
+    <ul> 
+	    <li>HTML</li>
+		<li>CSS</li>
+		<li>JQuery
+		<ul> 
+	       <li>HTML</li>
+		   <li>CSS</li>
+		   <li>JQuery</li>
+	    </ul>
+		</li>
+	</ul>
+    <h1>Description list</h1> 
+    <dl>
+	    <dt>HTML</dt>
+	    <dd>Good</dd>
+		<dd>Nice</dd>
+		<dt>CSS</dt>
+	    <dd>Good</dd>
+		<dd>Nice</dd>
+	</dl>
+	
+    <h1>Ordered list</h1> 
+	<ol reversed type="a"> 
+	    <li>HTML</li>
+		<li>CSS</li>
+		<li>JQuery</li>
+	</ol>
+    <div > <!--style= "margin:20px auto;background=#DDD;width:500px;padding:10px" > -->
+	 This is div 
+	</div>
+	<p style="color:red">I came here on 4<sup><b>th</b></sup> of october</p>
+	<p>I came here to drink H<sub><b>2</b></sub>O</p>
+    <h1>Hi There</h1>
+    <h2>Hi There</h2>
+    <h3>Hi There</h3>
+    <h4>Hi There</h4>
+    <h5>Hi There</h5>
+    <h6>Hi There</h6>
+	<a href="#para13_1">Go To Story13</a>
+	<a href="#para13_2">Go To Story13</a>
+	<p>This <i>is</i> <small>my</small> <b>1paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>2paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>3paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>4paragraph</b><br>Hello From The Other Side<br> </p>
+    <blockquote>Hello This is <mark>me</mark> I was wondering if you after all this years want to <del>hang</del> on to <ins>go over</ins> every thing </blockquote>	
+    <blockquote>Hello This is <mark>me</mark> I was wondering if you after all this years want to <del>hang</del> on to <ins>go over</ins> every thing </blockquote>	
+	<q>Hello This is me I was wondering </q>	
+
+	<p>This <i>is</i> <small>my</small> <b>5paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>6paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>7paragraph</b><br>Hello From The Other Side<br> </p> 
+	<p>This <i>is</i> <small>my</small> <b>8paragraph</b><br>Hello From The Other Side<br> </p> 
+	
+		<p id="para13_1">This is my 13paragraph<br>
+	   Hello From The Other Side<br> 
+	</p>
+	<p>This is my 9paragraph<br>Hello From The Other Side<br> </p> 
+	<p>This is my 10paragraph<br>Hello From The Other Side<br> </p> 
+	<p>This is my 11paragraph<br>Hello From The Other Side<br> </p>
+	<p>This is my 12paragraph<br>Hello From The Other Side<br> </p> 
+    <p id="para13_2">This is my 13paragraph<br>Hello From The Other Side<br> </p> 
+	<p>This is my 14paragraph<br>Hello From The Other Side<br> </p> 
+	<img src="E:\front end\imgs\15665543_1204035359682729_1497276975035825307_n.jpg"  alt="Anime" title="Boy" width="100" height="100">
+    <br><br>
+	<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_self">lesson1 in html</a>
+	<br><br>
+	<a href="https://www.youtube.com/watch?v=b2BRS90baOY" target="_blank">lesson2 in html</a>
+	<br><br>
+	<a href="https://www.youtube.com/watch?v=8gNrZ4lAnAw" target="_blank">lesson3 in html</a>
+</body>
+</html>
